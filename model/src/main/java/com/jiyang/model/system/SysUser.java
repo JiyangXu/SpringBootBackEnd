@@ -11,21 +11,21 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@ApiModel(description = "用户")
+@ApiModel(description = "User")
 @TableName("sys_user")
 public class SysUser extends BaseEntity {
 	
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(value = "用户名")
+	@ApiModelProperty(value = "User Name")
 	@TableField("username")
 	private String username;
 
-	@ApiModelProperty(value = "密码")
+	@ApiModelProperty(value = "Password")
 	@TableField("password")
 	private String password;
 
-	@ApiModelProperty(value = "姓名")
+	@ApiModelProperty(value = "Name")
 	@TableField("name")
 	private String name;
 

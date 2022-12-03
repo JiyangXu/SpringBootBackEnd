@@ -8,21 +8,21 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-@ApiModel(description = "岗位")
+@ApiModel(description = "Position")
 @TableName("sys_post")
 public class SysPost extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(value = "岗位编码")
+	@ApiModelProperty(value = "Position Code")
 	@TableField("post_code")
 	private String postCode;
 
-	@ApiModelProperty(value = "岗位名称")
+	@ApiModelProperty(value = "Position Name")
 	@TableField("name")
 	private String name;
 
-	@ApiModelProperty(value = "显示顺序")
+	@ApiModelProperty(value = "Order")
 	@TableField("description")
 	private String description;
 

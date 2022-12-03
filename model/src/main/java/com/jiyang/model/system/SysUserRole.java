@@ -8,17 +8,17 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-@ApiModel(description = "用户角色")
+@ApiModel(description = "User Role")
 @TableName("sys_user_role")
 public class SysUserRole extends BaseEntity {
 	
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(value = "角色id")
+	@ApiModelProperty(value = "Role id")
 	@TableField("role_id")
 	private String roleId;
 
-	@ApiModelProperty(value = "用户id")
+	@ApiModelProperty(value = "User id")
 	@TableField("user_id")
 	private String userId;
 }

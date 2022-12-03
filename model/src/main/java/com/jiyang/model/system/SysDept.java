@@ -10,21 +10,21 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@ApiModel(description = "部门")
+@ApiModel(description = "Department")
 @TableName("sys_dept")
 public class SysDept extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(value = "部门名称")
+	@ApiModelProperty(value = "Department Name")
 	@TableField("name")
 	private String name;
 
-	@ApiModelProperty(value = "上级部门id")
+	@ApiModelProperty(value = "Parent id")
 	@TableField("parent_id")
 	private Long parentId;
 
-	@ApiModelProperty(value = "树结构")
+	@ApiModelProperty(value = "Tree Path")
 	@TableField("tree_path")
 	private String treePath;
 

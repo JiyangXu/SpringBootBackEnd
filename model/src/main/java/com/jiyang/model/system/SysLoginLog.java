@@ -15,15 +15,15 @@ public class SysLoginLog extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(value = "用户账号")
+	@ApiModelProperty(value = "UserName")
 	@TableField("username")
 	private String username;
 
-	@ApiModelProperty(value = "登录IP地址")
+	@ApiModelProperty(value = "Login ip")
 	@TableField("ipaddr")
 	private String ipaddr;
 
-	@ApiModelProperty(value = "登录状态（0成功 1失败）")
+	@ApiModelProperty(value = "Login Status")
 	@TableField("status")
 	private Integer status;
 

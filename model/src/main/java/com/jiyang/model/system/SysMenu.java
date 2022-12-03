@@ -10,21 +10,21 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@ApiModel(description = "菜单")
+@ApiModel(description = "Menu")
 @TableName("sys_menu")
 public class SysMenu extends BaseEntity {
 	
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(value = "所属上级")
+	@ApiModelProperty(value = "Parent Id")
 	@TableField("parent_id")
 	private Long parentId;
 
-	@ApiModelProperty(value = "名称")
+	@ApiModelProperty(value = "Name")
 	@TableField("name")
 	private String name;
 
-	@ApiModelProperty(value = "类型(1:菜单,2:按钮)")
+	@ApiModelProperty(value = "Type(1:Menu,2:Button)")
 	@TableField("type")
 	private Integer type;
 

@@ -15,15 +15,15 @@ public class SysOperLog extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 
-	@ApiModelProperty(value = "模块标题")
+	@ApiModelProperty(value = "Model Title")
 	@TableField("title")
 	private String title;
 
-	@ApiModelProperty(value = "业务类型（0其它 1新增 2修改 3删除）")
+	@ApiModelProperty(value = "Business Type（0 Other 1 New 2 Update 3 Delete）")
 	@TableField("business_type")
 	private String businessType;
 
-	@ApiModelProperty(value = "方法名称")
+	@ApiModelProperty(value = "Method Name")
 	@TableField("method")
 	private String method;
 
