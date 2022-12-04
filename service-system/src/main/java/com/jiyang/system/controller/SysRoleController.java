@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jiyang.common.result.Result;
 import com.jiyang.model.system.SysRole;
 import com.jiyang.model.vo.SysRoleQueryVo;
+import com.jiyang.system.exception.CustomException;
 import com.jiyang.system.service.SysRoleService;
 import com.jiyang.system.service.impl.SysRoleServiceImpl;
 import io.swagger.annotations.Api;
